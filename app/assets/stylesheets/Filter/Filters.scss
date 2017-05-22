@@ -1,0 +1,41 @@
+.filters-container {
+  border-bottom: 1px solid #F6F6F6;
+  padding-bottom: 30px;
+}
+
+.filters-container > * + * {
+  margin-top: 10px;
+}
+
+.filters-selections {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.filters-selections span {
+  pointer-events: none;
+}
+
+.filter-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+  font: bold calc(0.2em + 1vw) "Raleway";
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.filter-selector:hover {
+  background-color: #FFD5E0;
+  color: black;
+  cursor: pointer;
+}
+
+.filter-selector > * + * {
+  margin-left: 10px;
+}

@@ -1,0 +1,27 @@
+$spotify-green: #1DB954;
+
+.devise-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: calc(100vh - 50px);
+  margin: 0 auto;
+  font-family: "Raleway", helvetica, sans-serif;
+
+  .omniauth-button {
+    display: inline-block;
+    border: 1px solid $spotify-green;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $spotify-green;
+    transition: all 0.3s ease-in-out 0s;
+
+    &:hover {
+      background-color: $spotify-green;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.header-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 5px;
+  font-size: 6px;
+  background-color: black;
+  color: white;
+}
+
+.header-logo {
+  font: bold 30px "Raleway";
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  font: calc(1em + 1vw) "Raleway";
+}
+
+.header-menu > a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.header-menu > a:hover {
+  color: white;
+}
+
+.header-menu > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFD5E0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header-menu > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}

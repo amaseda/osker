@@ -1,0 +1,22 @@
+<div class="form-container">
+  <h2>SUBMIT A PLAYLIST</h2>
+
+  <%= form_for @playlist do |f| %>
+    <div class="field">
+      <%= f.label :name, "NAME" %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :playlist_url, "PLAYLIST URL" %>
+      <%= f.text_field :playlist_url %>
+    </div>
+
+    <div class="field">
+      <%= label_tag :genres, "GENRES" %>
+      <%= text_field_tag :genres %>
+    </div>
+
+    <%= f.submit "CREATE PLAYLIST" %>
+  <% end %>
+</div>

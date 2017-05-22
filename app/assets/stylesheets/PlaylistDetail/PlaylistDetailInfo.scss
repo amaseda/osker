@@ -1,0 +1,17 @@
+.playlist-detail-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  min-height: 700px;
+  padding-right: 5px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-family: "Cabin", helvetica, sans-serif;
+  }
+}

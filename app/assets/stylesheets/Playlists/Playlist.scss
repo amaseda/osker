@@ -1,0 +1,29 @@
+.playlist-container {
+  max-width: 200px;
+  margin: 0 5px 30px 0;
+}
+
+.playlist-container > * + * {
+  margin-top: 2px;
+}
+
+.playlist-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  margin: 2px auto 0 auto;
+  background-color: black;
+  color: white;
+  font: calc(0.25em + 1vw) "Raleway";
+  text-align: center;
+  line-height: 1em;
+  white-space: initial;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.playlist-image {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+}

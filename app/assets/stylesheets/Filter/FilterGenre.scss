@@ -1,0 +1,21 @@
+.genres-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.genre {
+  min-width: 30px;
+  border: 1px solid #A9A9A9;
+  border-radius: 2px;
+  padding: 10px;
+  font: bold calc(0.2em + 1vw) "Raleway";
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.genre:hover, .genre-selected {
+  border: 1px solid #FFD5E0;
+  background-color: #FFD5E0;
+  color: black;
+}

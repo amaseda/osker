@@ -1,0 +1,51 @@
+.playlist-detail-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+
+  .playlist-detail-buttons-left, .playlist-detail-buttons-right {
+    display: flex;
+  }
+
+  .playlist-detail-buttons-left {
+    width: 50%;
+
+    & > .playlist-detail-button {
+      margin-right: 10px;
+    }
+  }
+
+  .playlist-detail-buttons-right {
+    width: 25%;
+    justify-content: flex-end;
+
+    & > .playlist-detail-button {
+      margin-left: 10px;
+    }
+  }
+
+  .playlist-detail-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 50px;
+    color: black;
+    padding: 10px;
+    border: 1px solid #A9A9A9;
+    border-radius: 2px;
+    font: bold calc(0.2em + 1vw) "Raleway";
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid #FFD5E0;
+      background-color: #FFD5E0;
+      color: black;
+    }
+
+    i {
+      color: white;
+    }
+  }
+}

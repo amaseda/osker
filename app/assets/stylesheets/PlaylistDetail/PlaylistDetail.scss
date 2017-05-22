@@ -1,0 +1,23 @@
+$osker-pink: #FFD5E0;
+
+.playlist-detail-container {
+  width: 100%;
+
+  .playlist-detail-header {
+     width: 100%;
+     margin-bottom: 10px;
+     padding: 10px;
+     background-color: black;
+     font-family: "Raleway", helvetica, sans-serif;
+     font-size: 1.5em;
+     font-weight: bold;
+     color: white;
+     text-transform: uppercase;
+  }
+
+  .playlist-detail-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

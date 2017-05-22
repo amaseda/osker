@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  playlist_url: MyString
+  image_url: MyString
+  rating: 1
+  genre: one
+
+two:
+  name: MyString
+  playlist_url: MyString
+  image_url: MyString
+  rating: 1
+  genre: two

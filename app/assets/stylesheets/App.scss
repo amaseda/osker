@@ -1,0 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Space+Mono';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Cabin';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  min-height: calc(100vh - 50px);
+  margin: 50px auto 0 auto;
+}
+
+.container > * + * {
+  margin-top: 30px;
+}
+
+h2 {
+  margin: 0;
+  font: calc(0.5em + 1vw) "Raleway";
+  color: #A9A9A9;
+}
