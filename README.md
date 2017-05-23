@@ -11,6 +11,7 @@ $ bundle
 $ rails db:create db:migrate db:seed
 $ rails s
 ```
+
 > You can then visit the app at `http://localhost:3000`
 
 ## When Submitting A Playlist...
