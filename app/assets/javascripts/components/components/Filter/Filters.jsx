@@ -14,8 +14,8 @@ const Filters = (props) => (
     </div>
     { props.showResults
         ? <FilterResultsContainer filterToShow={ props.filterToShow }
-                                  selectGenre={ (e) => props.selectGenre(e) }
-                                  selectContainArtist={ (e) => props.selectContainArtist(e) } /> 
+                                  selectGenre={ e => props.selectGenre(e) }
+                                  selectContainArtist={ e => props.selectContainArtist(e) } /> 
         : "" }
   </div>
 )

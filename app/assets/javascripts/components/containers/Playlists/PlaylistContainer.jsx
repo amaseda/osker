@@ -18,7 +18,7 @@ class PlaylistContainer extends React.Component {
                 name={ this.props.name }
                 handleMouseOver={ e => this.handleMouseOver(e) }
                 handleMouseLeave={ e => this.handleMouseLeave(e) }
-                selectPlaylist={ (e) => this.props.selectPlaylist(e) } />
+                selectPlaylist={ e => this.props.selectPlaylist(e) } />
     )
   }
 }

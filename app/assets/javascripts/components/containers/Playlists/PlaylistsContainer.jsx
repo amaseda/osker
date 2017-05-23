@@ -28,7 +28,7 @@ class PlaylistsContainer extends React.Component {
                                 imageUrl={ playlist.image_url }
                                 rating={ playlist.rating }
                                 key={ i }
-                                selectPlaylist={ (e) => this.props.selectPlaylist(e) } />
+                                selectPlaylist={ e => this.props.selectPlaylist(e) } />
     });
     return (
       <Playlists playlists={ playlists } />
