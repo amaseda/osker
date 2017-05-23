@@ -1,11 +1,11 @@
 class FilterGenreContainer extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       genres: ["Pop", "Rock", "Electronic", "Folk", "Hip-Hop", "Instrumental"]
     }
   }
-  
+
   render() {
     return (
       <FilterGenre genres={ this.state.genres }

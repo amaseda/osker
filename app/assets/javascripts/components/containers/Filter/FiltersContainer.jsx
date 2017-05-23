@@ -9,24 +9,26 @@ class FiltersContainer extends React.Component {
   }
 
   openSelection(e, filter) {
-    if((this.state.filterToShow === "") || (filter === this.state.filterToShow)){
+    if(this.state.filterToShow === ""){
       this.setState({
         showResults: !this.state.showResults,
         filterToShow: filter
       });
     } else {
+      this.props.clearFilters()
       this.setState({
         filterToShow: filter
       })
     }
   }
-  
+
   render() {
     return (
       <Filters showResults={ this.state.showResults }
                filterToShow={ this.state.filterToShow }
                openSelection={ this.openSelection }
-               selectGenre={ e => this.props.selectGenre(e) } />
+               selectGenre={ e => this.props.selectGenre(e) }
+               selectContainArtist={ e => this.props.selectContainArtist(e) } />
     )
   }
 }

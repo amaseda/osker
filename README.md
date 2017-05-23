@@ -1,24 +1,22 @@
-# README
+# Osker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A curated aggregator for Spotify playlists.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+```bash
+$ git clone git@github.com:amaseda/osker.git
+$ cd osker
+$ bundle
+$ rails db:create db:migrate db:seed
+$ rails s
+```
+> You can then visit the app at `http://localhost:3000`
 
-* System dependencies
+## When Submitting A Playlist...
 
-* Configuration
+- Whoever is currently logged into Osker must have created the playlist
+- Playlist URL must be in this format: `https://open.spotify.com/user/allthingsgomusic/playlist/1Wcqe6BrQMH62KKxC0e98c`
+- Genres must be comma+space separated (e.g., `Pop, Instrumental, Electronic`)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> Will chisel away at these requirements as the app continues to be built...

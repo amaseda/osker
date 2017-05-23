@@ -10,6 +10,21 @@ class AppContainer extends React.Component {
     }
   }
 
+  clearFilters(e){
+    this.setState({
+      selectedGenres: [],
+      selectedContainArtists: [],
+      selectedSimilarArtists: []  // Clear filter parameters when switching between filter types
+    })
+  }
+
+  selectContainArtist(e) {
+    artistsArray = e.target.value.split(", ")[0] ? e.target.value.split(", ") : []  // Set back to empty array if only item is empty string
+    this.setState({
+      selectedContainArtists: artistsArray,
+    })
+  }
+
   selectGenre(e) {
     // toggle genre presence in selectedGenres array
     const tempSelectedGenres = this.state.selectedGenres.slice()
@@ -21,7 +36,7 @@ class AppContainer extends React.Component {
       tempSelectedGenres.push(selectedGenre)
     }
     this.setState({
-      selectedGenres: tempSelectedGenres
+      selectedGenres: tempSelectedGenres,
     });
 
     // toggle genre button color
@@ -38,9 +53,12 @@ class AppContainer extends React.Component {
   render() {
     // check whether to display playlist list or detail view
     const filtersPlaylistsView = (<div className="filters-playlist-container">
-                                    <FiltersContainer selectGenre={(e) => this.selectGenre(e)} />
+                                    <FiltersContainer clearFilters={ e => this.clearFilters(e) }
+                                                      selectGenre={ e => this.selectGenre(e) }
+                                                      selectContainArtist={ e => this.selectContainArtist(e) } />
                                     <PlaylistsContainer playlists={ this.state.playlists }
                                                         selectedGenres={ this.state.selectedGenres }
+                                                        selectedContainArtists={ this.state.selectedContainArtists }
                                                         selectPlaylist={ e => this.selectPlaylist(e) } />
                                   </div>)
     const playlistDetailView = <PlaylistDetailContainer selectedPlaylist={ this.state.selectedPlaylist }/>
