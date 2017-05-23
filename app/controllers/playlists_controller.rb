@@ -11,7 +11,7 @@ class PlaylistsController < ApplicationController
   def create
     playlist_data = Spotify.get_playlist(params[:playlist][:playlist_url], current_user, session[:spotify_access_token])
     artists_array = Spotify.generate_artists_array(playlist_data)
-    Spotify.create_playlist_and_artists(playlist_data, params[:playlist], artists_array, params[:genres].split(", "))
+    Spotify.create_playlist_genres_and_artists(playlist_data, params[:playlist], artists_array, params[:genres].split(/,\W*/)) # Tidy up these parameters
     redirect_to root_path
   end
 end

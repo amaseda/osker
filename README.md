@@ -15,8 +15,8 @@ $ rails s
 
 ## When Submitting A Playlist...
 
-- Whoever is currently logged into Osker must have created the playlist
+- Whoever is currently logged-in to Osker must have created the playlist
 - Playlist URL must be in this format: `https://open.spotify.com/user/allthingsgomusic/playlist/1Wcqe6BrQMH62KKxC0e98c`
-- Genres must be comma+space separated (e.g., `Pop, Instrumental, Electronic`)
+- Genres must be comma-separated (e.g., `Pop, Instrumental, Electronic`)
 
 > Will chisel away at these requirements as the app continues to be built...
