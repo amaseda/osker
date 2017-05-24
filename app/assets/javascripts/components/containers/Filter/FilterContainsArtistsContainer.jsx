@@ -9,3 +9,7 @@ class FilterContainsArtistsContainer extends React.Component {
     )
   }
 }
+
+FilterContainsArtistsContainer.propTypes = {
+  selectContainArtist: React.PropTypes.func
+}

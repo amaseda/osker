@@ -7,3 +7,7 @@ const FilterContainsArtists = (props) => (
     </form>
   </div>
 )
+
+FilterContainsArtists.propTypes = {
+  selectContainArtist: React.PropTypes.func
+}

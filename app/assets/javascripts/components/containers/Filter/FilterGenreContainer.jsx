@@ -13,3 +13,7 @@ class FilterGenreContainer extends React.Component {
     )
   }
 }
+
+FilterGenreContainer.propTypes = {
+  selectGenre: React.PropTypes.func
+}

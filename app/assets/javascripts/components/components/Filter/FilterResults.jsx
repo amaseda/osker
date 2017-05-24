@@ -8,8 +8,12 @@ const FilterResults = (props) => {
     selection = <FilterSimilarArtistsContainer />
   }
   return (
-    <div>
-      { selection }
-    </div>
+    <div>{ selection }</div>
   )
+}
+
+FilterResults.propTypes = {
+  filterToShow: React.PropTypes.string,
+  selectGenre: React.PropTypes.func,
+  selectContainArtist: React.PropTypes.func
 }

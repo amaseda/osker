@@ -17,3 +17,12 @@ const Playlist = (props) => (
     <PlaylistRatingContainer />
   </div>
 )
+
+Playlist.propTypes = {
+  id: React.PropTypes.number,
+  imageUrl: React.PropTypes.string,
+  name: React.PropTypes.string,
+  handleMouseOver: React.PropTypes.func,
+  handleMouseLeave: React.PropTypes.func,
+  selectPlaylist: React.PropTypes.func
+}

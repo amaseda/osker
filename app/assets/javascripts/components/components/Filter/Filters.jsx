@@ -15,7 +15,15 @@ const Filters = (props) => (
     { props.showResults
         ? <FilterResultsContainer filterToShow={ props.filterToShow }
                                   selectGenre={ e => props.selectGenre(e) }
-                                  selectContainArtist={ e => props.selectContainArtist(e) } /> 
+                                  selectContainArtist={ e => props.selectContainArtist(e) } />
         : "" }
   </div>
 )
+
+Filters.propTypes = {
+  showResults: React.PropTypes.bool,
+  filterToShow: React.PropTypes.string,
+  openSelection: React.PropTypes.func,
+  selectGenre: React.PropTypes.func,
+  selectContainArtist: React.PropTypes.func,
+}

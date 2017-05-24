@@ -35,3 +35,10 @@ class PlaylistsContainer extends React.Component {
     )
   }
 }
+
+PlaylistsContainer.propTypes = {
+  playlists: React.PropTypes.array,
+  selectedGenres: React.PropTypes.array,
+  selectedContainArtists: React.PropTypes.array,
+  selectPlaylist: React.PropTypes.func
+}

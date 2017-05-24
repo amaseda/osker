@@ -9,3 +9,7 @@ class PlaylistDetailPlayerContainer extends React.Component {
     )
   }
 }
+
+PlaylistDetailPlayerContainer.propTypes = {
+  selectedPlaylist: React.PropTypes.object
+}

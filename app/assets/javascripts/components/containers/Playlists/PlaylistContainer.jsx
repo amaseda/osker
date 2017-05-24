@@ -22,3 +22,12 @@ class PlaylistContainer extends React.Component {
     )
   }
 }
+
+PlaylistContainer.propTypes = {
+  id: React.PropTypes.number,
+  name: React.PropTypes.string,
+  playlistUrl: React.PropTypes.string,
+  imageUrl: React.PropTypes.string,
+  rating: React.PropTypes.number,
+  selectPlaylist: React.PropTypes.func
+}

@@ -32,3 +32,9 @@ class FiltersContainer extends React.Component {
     )
   }
 }
+
+FiltersContainer.propTypes = {
+  clearFilters: React.PropTypes.func,
+  selectGenre: React.PropTypes.func,
+  selectContainArtist: React.PropTypes.func
+}

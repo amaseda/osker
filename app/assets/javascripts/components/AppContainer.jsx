@@ -69,3 +69,7 @@ class AppContainer extends React.Component {
     )
   }
 }
+
+AppContainer.propTypes = {
+  playlists: React.PropTypes.array
+}

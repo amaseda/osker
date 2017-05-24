@@ -12,3 +12,8 @@ const FilterGenre = (props) => {
     </div>
   )
 }
+
+FilterGenre.propTypes = {
+  genres: React.PropTypes.array,
+  selectGenre: React.PropTypes.func
+}

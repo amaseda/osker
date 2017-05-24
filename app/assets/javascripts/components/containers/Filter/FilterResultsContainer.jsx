@@ -7,3 +7,9 @@ class FilterResultsContainer extends React.Component {
     )
   }
 }
+
+FilterResultsContainer.propTypes = {
+  filterToShow: React.PropTypes.string,
+  selectGenre: React.PropTypes.func,
+  selectContainArtist: React.PropTypes.func
+}

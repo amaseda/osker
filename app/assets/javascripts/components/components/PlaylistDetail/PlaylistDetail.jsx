@@ -10,3 +10,7 @@ const PlaylistDetail = props => (
     </div>
   </div>
 )
+
+PlaylistDetail.propTypes = {
+  selectedPlaylist: React.PropTypes.object
+}
